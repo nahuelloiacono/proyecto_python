@@ -37,7 +37,9 @@
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
         <a class="navbar-brand" href="{% url 'Inicio' %}">Inicio</a>
-        <a class="navbar-brand" href="{% url 'Profesores' %}">Historia del vino</a>
+        <a class="navbar-brand" href="{% url 'Profesores' %}"
+          >Historia del vino</a
+        >
         <a class="navbar-brand" href="{% url 'Cursos' %}">Malbec</a>
         <a class="navbar-brand" href="{% url 'Estudiantes' %}">Cabernet</a>
         <a class="navbar-brand" href="{% url 'Entregables' %}">Pinot</a>
@@ -70,18 +72,36 @@
 
     <!-- Footer-->
     <footer class="footer bg-light">
-      <div class="container d-flex justify-content-center"">
+      <div class="container d-flex justify-content-center">
         <div class="row">
           <div>
             <ul class="list-inline mb-0">
-              <li class="list-inline-item me-4">
-                <a href="#!"><i class="bi-facebook fs-3"></i></a>
-              </li>
-              <li class="list-inline-item me-4">
-                <a href="#!"><i class="bi-twitter fs-3"></i></a>
+              <li class="list-inline-item">
+                <a href="#!"
+                  ><img
+                    src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670_960_720.png"
+                    width="40"
+                    height="40"
+                    alt="Logo de Instagram"
+                /></a>
               </li>
               <li class="list-inline-item">
-                <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                <a href="#!"
+                  ><img
+                    src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_960_720.png"
+                    width="40"
+                    height="40"
+                    alt="Logo de Facebook"
+                /></a>
+              </li>
+              <li class="list-inline-item me-4">
+                <a href="#!"
+                  ><img
+                    src="https://cdn.pixabay.com/photo/2021/05/22/11/38/whatsapp-6273368_960_720.png"
+                    width="40"
+                    height="40"
+                    alt="Logo de WhatsApp"
+                /></a>
               </li>
             </ul>
           </div>
