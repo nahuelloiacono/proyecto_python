@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse
 from django.http import HttpResponse
 from AppCoder.models import Curso
 from AppCoder.forms import CursoFormulario
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -42,3 +43,11 @@ def cursoFormulario(request):
       else:
             miFormulario = CursoFormulario()
       return render(request, "AppCoder/cursoFormulario.html", {"miFormulario": miFormulario})
+
+def busquedaCamada(request):
+      return render(request, "AppCoder/busquedaCamada.html")
+
+def buscar(request):
+      respuesta = f"Estoy buscando la camada nro: {request.GET['camada']}"
+
+      return HttpResponse(respuesta)
